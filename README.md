@@ -15,6 +15,13 @@ $ sudo -i
 
 #systemctl status nginx
 
+#systemctl start nginx
+
+#systemctl enable nginx
+
+##Check Nginx Server From Browser
+EC2 Instance Public IP (Elastic IP)
+
 ## PHP Installation
 #apt-cache pkgnames | grep php7.4
 
@@ -94,17 +101,25 @@ $ sudo -i
 
 #systemctl enable php7.4-fpm
 
+#chmod -R 777 /var/www/html/testing/storage
+
+
 ## Security Group for nginx
-Edit inbound rules
-http 80
-https 443
-ssh 22
+Edit Inbound Rules
+http 80     anywhere
+https 443   anywhere 
+ssh 22      anywhere
+
 ## Security Group for Database
+Edit Inbound Rules
 MySQL Aurora 3306   custom = VPC IP
 
 #Connect Web Server and  Aurora DB
+
 .env Config File
+
 #cd /var/www/html/testing/
+
 #vim .env 
 
 DB_CONNECTION=mysql
@@ -129,6 +144,7 @@ DB_PASSWORD=*******
 
 mysql >
 
+-------------------------------------------------------------------------------------
 
 
 
