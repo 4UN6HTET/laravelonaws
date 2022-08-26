@@ -1,7 +1,11 @@
 # Laravel 8 on AWS and Aurora Mysql RDS 
 Assignment
+
 ## Launch EC2 Instance ( Ubuntu ) 
-Associate Elastic IP To your EC2 
+
+##Elasti Ip Create 
+Associate Elatic IP with EC2 Instance 
+
 ## Connect your EC2 
 ssh -i ssh -i "test.pem" ubuntu@ec2-18-142-197-106.ap-southeast-1.compute.amazonaws.com 
 
