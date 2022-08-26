@@ -63,7 +63,7 @@ EC2 Instance Public IP (Elastic IP)
 
 #vim /etc/nginx/sites-available/vhostlaravel.conf
 
-  server {
+     server {
   
      listen 80;
      
@@ -93,7 +93,7 @@ EC2 Instance Public IP (Elastic IP)
              fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
              include fastcgi_params;
      }
- }
+    }
 
 
 #ln -s /etc/nginx/sites-available/vhostlaravel.conf /etc/nginx/sites-enabled/
