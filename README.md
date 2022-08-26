@@ -3,8 +3,9 @@ Assignment
 
 ## Launch EC2 Instance ( Ubuntu ) 
 
-##Elasti Ip Create 
-Associate Elatic IP with EC2 Instance 
+## Elasti Ip Create 
+
+Associate Elatic IP with EC2 Instance (Elastic IP do not change and they remain same even if you terminate the instance and later again restart the same instance.)
 
 ## Connect your EC2 
 ssh -i ssh -i "test.pem" ubuntu@ec2-18-142-197-106.ap-southeast-1.compute.amazonaws.com 
@@ -117,6 +118,15 @@ ssh 22      anywhere
 ## Security Group for Database
 Edit Inbound Rules
 MySQL Aurora 3306   custom = VPC IP
+
+## Aurora Mysql RDS
+1.For Engine options, Choose Amazon Aurora
+2.Choose Amazon Aurora with MySQL compatibility
+3.Choose Dev/Test (Choose Production, For high availability, fast and consistent performance)
+4.Provide a name for DB Cluster
+5.Master username and Password
+6.For Publicly accessible, Choose No, because I don’t want to expose the databases to the public network.
+7.securtiy group for auroradb
 
 #Connect Web Server and  Aurora DB
 
