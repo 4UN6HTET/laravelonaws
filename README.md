@@ -1,4 +1,4 @@
-# laravelonaws
+# Laravel 8 on AWS and Aurora Mysql RDS 
 Assignment
 ## Launch EC2 Instance ( Ubuntu ) 
 Associate Elastic IP To your EC2 
